@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello 页面</title>
+</head>
+<body>
+    <h1 th:text="'Hello, ' + ${name}">默认名字</h1>
+    <h1 th:text="${message}">默认消息</h1>
+    <a th:href="@{/swagger-ui/index.html}" th:text="@{/swagger-ui/index.html}">http://localhost:8080/swagger-ui/index.html</a>
+    <p>当前时间：<span th:text="${#dates.format(new java.util.Date(), 'yyyy-MM-dd HH:mm:ss')}"></span></p>
+    <details>
+        <summary>hello 控制器</summary>
+        <ul>
+            <li>
+                <a th:href="@{/hello/hello}">
+                    访问 /hello/hello
+                </a>
+            </li>
+            <li>
+                <a th:href="@{/hello/hello2}">
+                    访问 /hello/hello2
+                </a>
+            </li>
+            <li>
+                <a th:href="@{/hello/hello3}">
+                    访问 /hello/hello3
+                </a>
+            </li>
+        </ul>
+    </details>
+</body>
+</html>
