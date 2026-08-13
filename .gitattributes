@@ -1,2 +1,11 @@
+
+# 让 Git 自动判断，通常作为默认规则
+* text=auto
+
+# 明确指定所有文本文件使用 LF 作为行结束符
+* text eol=lf
+
+# 标记 .bat 文件必须使用 CRLF
+*.bat text eol=crlf
 /mvnw text eol=lf
 *.cmd text eol=crlf

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
 @Controller
-
 public class PageController {
     @Value("${server.port}")  // 从配置文件读取端口
     private int port;
