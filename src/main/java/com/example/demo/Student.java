@@ -14,4 +14,9 @@ public class Student extends Person {
     public String getName() {
         return super.getName();
     }
+    // Override 是非必需的
+    @Override
+    public int getAge() {
+        return 123;
+    }
 }

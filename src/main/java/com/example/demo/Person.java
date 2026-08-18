@@ -1,6 +1,8 @@
 package com.example.demo;
 
-public class Person {
+public class
+
+Person {
     protected String name;
     protected int age;
 
